@@ -1,4 +1,4 @@
-local URL = "https://pastebin.com/raw/3HhpNH0b"
+local URL = "https://raw.githubusercontent.com/Kronos9247/Blueprint-Coding/master/data/blueprints_init.txt"
 
 http.Fetch( URL,
 	function( body, len, headers, code )
