@@ -6,6 +6,7 @@ ExtLoader.io = {}
 ExtLoader.io.types = {}
 
 ExtLoader.library = {}
+ExtLoader.operator = {}
 
 function ExtLoader.Register( library )
   ExtLoader.library[library] = {}
@@ -16,6 +17,9 @@ function ExtLoader.RegisterClass( library, ioname, name )
 end
 function ExtLoader.RegisterFunction( library, name, textfunc, inputnames, inputtypes, outputname, outputtype, thisname, thistype )
   ExtLoader.library[library][name] = { true, name, textfunc, inputnames, inputtypes, outputname, outputtype, thisname, thistype }
+end
+function ExtLoader.RegisterOperator( library, name, frontvar, backvar, endprodukt )
+  ExtLoader.operator[library][name] = { frontvar, backvar, endprodukt }
 end
 function ExtLoader.AddE2HelperDescription( library, name )
 
