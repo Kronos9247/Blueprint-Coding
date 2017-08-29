@@ -6,14 +6,14 @@ ExtLoader.Register( "math" )
 ExtLoader.RegisterClass( "math", "NUMBER", "number" )
 ExtLoader.RegisterClass( "math", "NORMAL", "normal" )
 
-ExtLoader.RegisterOperator( "math", "+", "NUMBER", "NUMBER" )
-ExtLoader.RegisterOperator( "math", "+", "NORMAL", "NORMAL" )
+ExtLoader.RegisterOperator( "math", "+", "NUMBER", "NUMBER", "NUMBER" )
+ExtLoader.RegisterOperator( "math", "+", "NORMAL", "NORMAL", "NORMAL" )
 
-ExtLoader.RegisterOperator( "math", "==", "NUMBER", "NUMBER" )
-ExtLoader.RegisterOperator( "math", "==", "NORMAL", "NORMAL" )
+ExtLoader.RegisterOperator( "math", "==", "NUMBER", "NUMBER", "NORMAL" )
+ExtLoader.RegisterOperator( "math", "==", "NORMAL", "NORMAL", "NORMAL" )
 
-ExtLoader.RegisterOperator( "math", "!=", "NUMBER", "NUMBER" )
-ExtLoader.RegisterOperator( "math", "!=", "NORMAL", "NORMAL" )
+ExtLoader.RegisterOperator( "math", "!=", "NUMBER", "NUMBER", "NORMAL" )
+ExtLoader.RegisterOperator( "math", "!=", "NORMAL", "NORMAL", "NORMAL" )
 
 ExtLoader.RegisterFunction( "math", "Cosine", "cos", { "Input" }, { "NUMBER" }, "Cosine", "NUMBER" )
 ExtLoader.AddE2HelperDescription( "math", "Cosine" )
